@@ -1,0 +1,8 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+#pragma once
+
+const double CHANCETOGETFOUR = 0.1;
+const int ONESIDEOFTHEBOARD = 4;
+const int BOARDSIZE = ONESIDEOFTHEBOARD * ONESIDEOFTHEBOARD;
+#endif //CONSTANTS_H
