@@ -1,5 +1,3 @@
-#ifndef GAMESQUARE_H
-#define GAMESQUARE_H
 #pragma once
 
 #include <random>
@@ -8,7 +6,6 @@
 class GameSquare {
 private:
     int i_value;
-    bool b_is_taken;
     std::mt19937& c_random_engine;
 public:
     explicit GameSquare(std::mt19937& gen);
@@ -24,12 +21,9 @@ public:
     //gettery i settery
     [[nodiscard]] int iGetValue() const;
 
-    [[nodiscard]] bool bGetIsTaken() const;
+    void vSetValue(int i_value);
 
     void vClear();
 
     friend std::ostream& operator<<(std::ostream& os, const GameSquare& square);
 };
-
-
-#endif //GAMESQUARE_H

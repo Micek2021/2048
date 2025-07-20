@@ -1,8 +1,7 @@
-#ifndef GAMEBOARD_H
-#define GAMEBOARD_H
 #pragma once
 
 #include "GameSquare.h"
+#include "Constants.h"
 
 #include <vector>
 #include <set>
@@ -19,26 +18,19 @@ public:
 
     void vStart();
 
+    void vReset();
+
+    void vMove(Direction direction);
+
+    void vOneTurn(Direction dir);
+
+    [[nodiscard]] bool bIsFull() const;
+
     [[nodiscard]] bool bIsLost() const;
 
     void vSpawnNewTile();
 
-    void vOneTurn();
-
-    void vReset();
-
     void vClearOneSquare(int index);
-
-    //logika poruszania
-    void vMove();
-
-    void vMoveLeft();
-
-    void vMoveRight();
-
-    void vMoveUp();
-
-    void vMoveDown();
 
     //logika wypisywania
 
@@ -46,7 +38,3 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const GameBoard& board);
 };
-
-
-
-#endif //GAMEBOARD_H

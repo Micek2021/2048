@@ -8,4 +8,8 @@ add_executable(2048_v2 main.cpp
         GameSquare.h
         Constants.h
         GameBoard.cpp
-        GameBoard.h)
+        GameBoard.h
+        GameLoop.cpp
+        GameLoop.h
+        DirectionInput.cpp
+        DirectionInput.h)

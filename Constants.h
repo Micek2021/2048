@@ -1,8 +1,7 @@
-#ifndef CONSTANTS_H
-#define CONSTANTS_H
 #pragma once
 
-const double CHANCETOGETFOUR = 0.1;
-const int ONESIDEOFTHEBOARD = 4;
-const int BOARDSIZE = ONESIDEOFTHEBOARD * ONESIDEOFTHEBOARD;
-#endif //CONSTANTS_H
+constexpr double CHANCETOGETFOUR = 0.1;
+constexpr  int ONESIDEOFTHEBOARD = 4;
+constexpr  int BOARDSIZE = ONESIDEOFTHEBOARD * ONESIDEOFTHEBOARD;
+
+enum Direction {Left, Right, Up, Down};
